@@ -89,6 +89,11 @@ header div {
   gap: var(--gapValue);
   flex: 4;
 }
+@media (max-width: 576px) {
+  #contentMain div {
+    grid-column: span 2;
+  }
+}
 #contentMain div {
   padding: var(--padValue);
 }
