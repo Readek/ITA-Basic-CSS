@@ -61,6 +61,12 @@ header div {
 }
 .logo {
   flex: 1;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.2);
+  background-color: #ff1493;
 }
 .nav {
   flex: 3;
