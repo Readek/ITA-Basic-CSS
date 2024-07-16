@@ -1,0 +1,122 @@
+:root {
+  --padValue: 20px;
+  --gapValue: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1200px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gapValue);
+}
+
+.bacCol {
+  background-color: black;
+}
+
+
+/** Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gapValue);
+  padding: var(--padValue);
+}
+header div {
+  padding: var(--padValue);
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--padValue);
+  background-color: #2c4059;
+}
+.navBarContent {
+  background-color: #ea5455;
+}
+.logo {
+  flex: 1;
+}
+.nav {
+  flex: 3;
+}
+.social {
+  flex: 1;
+}
+
+.bannerDiv {
+  background-color: #ff8b00;
+}
+.banner {
+  background-color: #fed700;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+
+/** Content */
+
+#content {
+  display: flex;
+  gap: var(--gapValue);
+  padding: var(--padValue);
+}
+
+#contentMain {
+  background-color: #4e4e6a;
+  display: grid;
+  grid: auto-flow / 1fr 1fr;
+  padding: var(--padValue);
+  gap: var(--gapValue);
+  flex: 4;
+}
+#contentMain div {
+  padding: var(--padValue);
+}
+
+.article {
+  background-color: #1f6cb0;
+}
+.navegacion {
+  background-color: #71a3c4;
+  grid-column: span 2;
+}
+
+#contentSide {
+  background-color: #f63f51;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gapValue) / 2);
+  padding: var(--padValue);
+}
+#contentSide div {
+  padding: var(--padValue);
+}
+.publicidad {
+  background-color: #fed700;
+}
+
+/** Footer */
+
+footer {
+  padding: var(--padValue);
+}
+footer div {
+  padding: var(--padValue);
+}
+
+.pie {
+  background-color: #f0e78c;
+}
